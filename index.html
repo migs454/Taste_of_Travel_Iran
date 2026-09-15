@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Taste of Travel - Discovering Iran’s Culinary Soul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taste of Travel - Iran</title>
+
+    <style>
+
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+    font-family: 'Tahoma', Arial, sans-serif;
+    background-color: #FFF8E7;
+    color: #7B1F1F;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #0B3D2E;
+    color: #FFD700;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #FFD700;
+    font-size: 52px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #7B1F1F;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #FFF8E7;
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #40E0D0;
+}
+
+.recipe {
+    background-color: #FFF8E7;
+    border: 3px solid #0B3D2E;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.recipe > h2 {
+    border-bottom: 3px solid #FFD700;
+    padding-bottom: 10px;
+    color: #0B3D2E;
+}
+
+.recipe-image, .country-image {
+    border: 3px solid #7B1F1F;
+    border-radius: 8px;
+    width: 4in;
+    height: 4in;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+.ingredients {
+    margin: 15px 0 20px 25px;
+}
+
+.tips {
+    background-color: #FFD700;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid #0B3D2E;
+}
+
+.chef-quote {
+    font-style: italic;
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #0B3D2E;
+}
+
+#country-introduction {
+    background-color: #FFF8E7;
+    padding: 30px;
+    margin: 25px auto;
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid #FFD700;
+    border-radius: 14px;
+}
+
+#culinary-adventure {
+    background-color: #FFF8E7;
+    padding: 30px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid #0B3D2E;
+    border-radius: 14px;
+}
+
+h1, h2, h3 {
+    color: #7B1F1F;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.recipe p {
+    margin-bottom: 15px;
+}
+
+h2 + p {
+    text-align: justify;
+}
+
+.recipe h2 ~ ul {
+    line-height: 1.8;
+}
+
+img[alt] {
+    max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #0B3D2E;
+    color: #FFD700;
+    padding: 12px;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F0C9;
+}
+
+ul, ol {
+    margin-left: 25px;
+}
+
+.fact-box {
+    background-color: #FFF8E7;
+    border: 3px solid #40E0D0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #0B3D2E;
+    color: #FFD700;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+.top-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.top-link a {
+    color: #40E0D0;
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <header id="top">
+        <h1><b>Taste of Travel</b></h1>
+        <p>Discovering Iran’s Culinary Soul</p>
+    </header>
+
+    <nav>
+        <a href="#country-introduction">Country Introduction</a>
+        <a href="#recipe1">Fesenjan</a>
+        <a href="#recipe2">Chelo Kebab</a>
+        <a href="#recipe3">Ghormeh Sabzi</a>
+        <a href="#recipe4">Tahdig</a>
+        <a href="#recipe5">Ash Reshteh</a>
+        <a href="#culinary-adventure">Culinary Adventure</a>
+        <a href="#footer">Footer</a>
+    </nav>
+
+
+    <section id="country-introduction">
+
+        <h2>Iran</h2>
+
+        <img src="1ran.jpg"
+             alt="iran"
+             class="country-image">
+
+        <h3>Location</h3>
+
+        <p>
+             Iran is located in Western Asia, bordered by Iraq, Turkey, Armenia, Azerbaijan, Turkmenistan, Afghanistan, and Pakistan, with coastlines along the Caspian Sea and the Persian Gulf.
+        </p>
+
+        <img src="2ran.jpg"
+             alt="iran map"
+             class="country-image">
+
+        <h3>Background and Culture</h3>
+
+        <p>
+            Iran has a deep history tied to Persian civilization, poetry (Hafez, Rumi), art, and architecture. Known for hospitality, tea culture, and traditional bazaars.
+        </p>
+
+        <img src="3ran.jpg"
+             alt="iran culture"
+             class="country-image">
+
+        <h3>Description of Iranian Cuisine</h3>
+
+        <p>
+            Iranian cuisine emphasizes rice (chelow), herbs, saffron, pomegranates, and slow-cooked stews. Regional diversity includes seafood in the south and hearty lamb dishes in the north.
+        </p>
+
+        <img src="4ran.jpg"
+             alt="iran cuisine"
+             class="country-image">
+
+        <h3>Commonly Used Ingredients</h3>
+
+        <div class="fact-box">
+            <ul>
+                <li><b>Meats:</b> Lamb, chicken, beef</li>
+                <li><b>Vegetables:</b> Eggplant, spinach, tomatoes, onions</li>
+                <li><b>Grains and Breads:</b> Rice, wheat flatbreads</li>
+                <li><b>Pantry Essentials:</b> Saffron, turmeric, dried limes, rose water, yogurt</li>
+            </ul>
+        </div>
+
+        <img src="5ran.jpg"
+             alt="iran ingredients"
+             class="country-image">
+
+        <h3>Interesting Food Culture Facts</h3>
+
+        <div class="fact-box">
+
+            <h3>Tea & Hospitality</h3>
+
+            <p>
+                Tea (chai) is central to Iranian social life, often served with sugar cubes.
+            </p>
+
+            <img src="6ran.jpg"
+                 alt="teaandhosp"
+                 class="country-image">
+
+            <h3>Nowruz Cuisine</h3>
+
+            <p>
+                During Persian New Year, symbolic dishes like Sabzi Polo (herbed rice with fish) are prepared.
+            </p>
+
+            <img src="7ran.jpg"
+                 alt="nowruz"
+                 class="country-image">
+
+        </div>
+
+    </section>
+
+    <section id="recipe1" class="recipe">
+
+    <h2>1. Fesenjan (Pomegranate Walnut Stew)</h2>
+
+    <img src="8ran.jpg"
+         alt="Fesenjan"
+         class="recipe-image">
+
+    <h3>Description</h3>
+    <p>
+        Fesenjan is a rich Persian stew made with ground walnuts and pomegranate molasses, often cooked with chicken or duck. It is known for its sweet-sour flavor and is traditionally served at celebrations.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul class="ingredients">
+        <li>500g chicken thighs</li>
+        <li>2 cups walnuts, ground</li>
+        <li>1 cup pomegranate molasses</li>
+        <li>1 large onion, chopped</li>
+        <li>2 tbsp vegetable oil</li>
+        <li>2 cups chicken stock</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h3>Preparation</h3>
+    <ol>
+        <li>Sauté onions in oil until golden.</li>
+        <li>Add ground walnuts and stir for 5 minutes.</li>
+        <li>Add chicken pieces and brown lightly.</li>
+        <li>Pour in stock and simmer for 30 minutes.</li>
+        <li>Stir in pomegranate molasses and cook until thickened.</li>
+    </ol>
+
+    <div class="tips">
+        <h3>Cooking Tips</h3>
+        <ul>
+            <li>Toast walnuts lightly before grinding for deeper flavor.</li>
+            <li>Adjust molasses for sweetness or tartness.</li>
+            <li>Serve with saffron rice for authenticity.</li>
+        </ul>
+    </div>
+
+    <h3>Recipe Details</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Preparation Time</th>
+            <th>Cooking Time</th>
+            <th>Serving Size</th>
+            <th>Serving Suggestions</th>
+        </tr>
+        <tr>
+            <td>Chicken Thighs</td>
+            <td>500 g</td>
+            <td>20 mins</td>
+            <td>1 hour</td>
+            <td>4</td>
+            <td rowspan="2">Serve with saffron basmati rice.</td>
+        </tr>
+        <tr>
+            <td colspan="4">Walnut and pomegranate stew</td>
+            <td>4 servings</td>
+        </tr>
+    </table>
+
+    <div class="chef-quote">
+        <strong>Chef Quote:</strong>
+        “Fesenjan is the poetry of Persian cuisine.” — Chef Parviz (Fictional)
+    </div>
+
+    <div class="top-link">
+        <a href="#top">Back to Top</a>
+    </div>
+</section>
+
+
+    <section id="recipe2" class="recipe">
+
+    <h2>2. Chelo Kebab (Rice with Kebab)</h2>
+
+    <img src="9ran.jpg"
+         alt="Chelo Kebab"
+         class="recipe-image">
+
+    <h3>Description</h3>
+    <p>
+        Chelo Kebab is Iran’s national dish, featuring saffron rice served with grilled lamb or beef kebabs, butter, and grilled tomato. It symbolizes Persian hospitality and tradition.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul class="ingredients">
+        <li>500g ground lamb or beef</li>
+        <li>1 large onion, grated</li>
+        <li>1 tsp turmeric</li>
+        <li>Salt and pepper to taste</li>
+        <li>2 cups basmati rice</li>
+        <li>1/4 tsp saffron threads</li>
+        <li>2 tbsp butter</li>
+        <li>2 tomatoes</li>
+    </ul>
+
+    <h3>Preparation</h3>
+    <ol>
+        <li>Mix meat with onion, turmeric, salt, and pepper.</li>
+        <li>Shape into long kebabs and grill over charcoal.</li>
+        <li>Cook rice until fluffy, then infuse with saffron water.</li>
+        <li>Serve kebabs over rice with butter and grilled tomato.</li>
+    </ol>
+
+    <div class="tips">
+        <h3>Cooking Tips</h3>
+        <ul>
+            <li>Use charcoal grilling for authentic smoky flavor.</li>
+            <li>Drain onion juice to prevent soggy kebabs.</li>
+            <li>Always serve with saffron rice for tradition.</li>
+        </ul>
+    </div>
+
+    <h3>Recipe Details</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Preparation Time</th>
+            <th>Cooking Time</th>
+            <th>Serving Size</th>
+            <th>Serving Suggestions</th>
+        </tr>
+        <tr>
+            <td>Ground Lamb</td>
+            <td>500 g</td>
+            <td>25 mins</td>
+            <td>30 mins</td>
+            <td>4</td>
+            <td rowspan="2">Serve with saffron rice and grilled tomato.</td>
+        </tr>
+        <tr>
+            <td colspan="4">Grilled kebabs with rice</td>
+            <td>4 servings</td>
+        </tr>
+    </table>
+
+    <div class="chef-quote">
+        <strong>Chef Quote:</strong>
+        “Chelo Kebab is the soul of Persian gatherings.” — Chef Shirin (Fictional)
+    </div>
+
+    <div class="top-link">
+        <a href="#top">Back to Top</a>
+    </div>
+</section>
+
+
+    <section id="recipe3" class="recipe">
+
+    <h2>3. Ghormeh Sabzi (Herb Stew)</h2>
+
+    <img src="10ran.jpg"
+         alt="Ghormeh Sabzi"
+         class="recipe-image">
+
+    <h3>Description</h3>
+    <p>
+        Ghormeh Sabzi is a fragrant herb stew made with lamb, kidney beans, and dried limes. It is considered the “king of stews” in Iran and is loved for its earthy, tangy flavor.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul class="ingredients">
+        <li>400g lamb cubes</li>
+        <li>2 cups mixed herbs (parsley, cilantro, fenugreek)</li>
+        <li>1 cup kidney beans</li>
+        <li>2 dried limes</li>
+        <li>1 large onion, chopped</li>
+        <li>3 tbsp vegetable oil</li>
+        <li>2 cups beef stock</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h3>Preparation</h3>
+    <ol>
+        <li>Sauté onions and lamb until browned.</li>
+        <li>Add herbs and fry until aromatic.</li>
+        <li>Add beans, dried limes, and stock.</li>
+        <li>Simmer for 2 hours until lamb is tender.</li>
+        <li>Serve hot with rice.</li>
+    </ol>
+
+    <div class="tips">
+        <h3>Cooking Tips</h3>
+        <ul>
+            <li>Use dried fenugreek for authentic flavor.</li>
+            <li>Pierce dried limes before adding to release aroma.</li>
+            <li>Cook slowly for depth of flavor.</li>
+        </ul>
+    </div>
+
+    <h3>Recipe Details</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Preparation Time</th>
+            <th>Cooking Time</th>
+            <th>Serving Size</th>
+            <th>Serving Suggestions</th>
+        </tr>
+        <tr>
+            <td>Lamb Cubes</td>
+            <td>400 g</td>
+            <td>20 mins</td>
+            <td>2 hours</td>
+            <td>4</td>
+            <td rowspan="2">Serve with steamed basmati rice.</td>
+        </tr>
+        <tr>
+            <td colspan="4">Herb stew with lamb and beans</td>
+            <td>4 servings</td>
+        </tr>
+    </table>
+
+    <div class="chef-quote">
+        <strong>Chef Quote:</strong>
+        “Ghormeh Sabzi is the pride of Persian kitchens.” — Chef Dariush (Fictional)
+    </div>
+
+    <div class="top-link">
+        <a href="#top">Back to Top</a>
+    </div>
+</section>
+
+
+    <section id="recipe4" class="recipe">
+
+    <h2>4. Tahdig (Crispy Rice)</h2>
+
+    <img src="11ran.jpg"
+         alt="Tahdig"
+         class="recipe-image">
+
+    <h3>Description</h3>
+    <p>
+        Tahdig is the golden, crispy crust of rice at the bottom of the pot, considered the most prized part of any Persian meal. It can be made with plain rice, potatoes, or even flatbread layered under the rice.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul class="ingredients">
+        <li>3 cups basmati rice</li>
+        <li>2 tbsp butter or oil</li>
+        <li>1 medium potato, thinly sliced (optional)</li>
+        <li>1/4 tsp saffron threads</li>
+        <li>Salt to taste</li>
+    </ul>
+
+    <h3>Preparation</h3>
+    <ol>
+        <li>Parboil rice until slightly tender, then drain.</li>
+        <li>Mix saffron with melted butter or oil.</li>
+        <li>Place potato slices or bread at the bottom of the pot.</li>
+        <li>Layer rice on top and drizzle with saffron butter.</li>
+        <li>Cover and steam on low heat until rice is fluffy and crust forms.</li>
+    </ol>
+
+    <div class="tips">
+        <h3>Cooking Tips</h3>
+        <ul>
+            <li>Use a non-stick pot for easier removal of the crust.</li>
+            <li>Keep heat low to avoid burning.</li>
+            <li>Invert the pot onto a platter to reveal the crispy layer.</li>
+        </ul>
+    </div>
+
+    <h3>Recipe Details</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Preparation Time</th>
+            <th>Cooking Time</th>
+            <th>Serving Size</th>
+            <th>Serving Suggestions</th>
+        </tr>
+        <tr>
+            <td>Basmati Rice</td>
+            <td>3 cups</td>
+            <td>20 mins</td>
+            <td>45 mins</td>
+            <td>4</td>
+            <td rowspan="2">Serve alongside Persian stews or kebabs.</td>
+        </tr>
+        <tr>
+            <td colspan="4">Crispy saffron rice crust</td>
+            <td>4 servings</td>
+        </tr>
+    </table>
+
+    <div class="chef-quote">
+        <strong>Chef Quote:</strong>
+        “Tahdig is the crown jewel of Persian rice.” — Chef Laleh (Fictional)
+    </div>
+
+    <div class="top-link">
+        <a href="#top">Back to Top</a>
+    </div>
+</section>
+
+
+    <section id="recipe5" class="recipe">
+
+    <h2>5. Ash Reshteh (Persian Noodle Soup)</h2>
+
+    <img src="12ran.jpg"
+         alt="Ash Reshteh"
+         class="recipe-image">
+
+    <h3>Description</h3>
+    <p>
+        Ash Reshteh is a thick, hearty soup made with herbs, beans, and noodles, topped with fried onions and kashk (fermented whey). It is often served during Nowruz (Persian New Year) and symbolizes prosperity and good fortune.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul class="ingredients">
+        <li>200g Persian noodles (reshteh)</li>
+        <li>1 cup chickpeas</li>
+        <li>1 cup kidney beans</li>
+        <li>1 cup lentils</li>
+        <li>2 cups mixed herbs (parsley, cilantro, spinach, dill)</li>
+        <li>2 large onions, sliced</li>
+        <li>3 tbsp vegetable oil</li>
+        <li>1/2 cup kashk (or yogurt)</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h3>Preparation</h3>
+    <ol>
+        <li>Cook beans and lentils until tender.</li>
+        <li>Sauté onions until golden, reserve half for garnish.</li>
+        <li>Add herbs and noodles to the pot with beans.</li>
+        <li>Simmer until noodles are cooked and soup thickens.</li>
+        <li>Top with fried onions and drizzle with kashk.</li>
+    </ol>
+
+    <div class="tips">
+        <h3>Cooking Tips</h3>
+        <ul>
+            <li>Use fresh herbs for vibrant flavor.</li>
+            <li>Stir frequently to prevent noodles from sticking.</li>
+            <li>Garnish with mint oil for extra aroma.</li>
+        </ul>
+    </div>
+
+    <h3>Recipe Details</h3>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Preparation Time</th>
+            <th>Cooking Time</th>
+            <th>Serving Size</th>
+            <th>Serving Suggestions</th>
+        </tr>
+        <tr>
+            <td>Persian Noodles</td>
+            <td>200 g</td>
+            <td>30 mins</td>
+            <td>1 hour</td>
+            <td>6</td>
+            <td rowspan="2">Serve warm with bread and fresh herbs.</td>
+        </tr>
+        <tr>
+            <td colspan="4">Hearty noodle and bean soup</td>
+            <td>6 servings</td>
+        </tr>
+    </table>
+
+    <div class="chef-quote">
+        <strong>Chef Quote:</strong>
+        “Ash Reshteh is the taste of Persian celebration.” — Chef Bahram (Fictional)
+    </div>
+
+    <div class="top-link">
+        <a href="#top">Back to Top</a>
+    </div>
+</section>
+
+
+    <section class="recipe">
+
+    <h2>Recipe Comparison Table</h2>
+
+    <table>
+        <tr>
+            <th>Recipe Name</th>
+            <th>Main Ingredient</th>
+            <th>Preparation Time</th>
+            <th>Cooking Time</th>
+            <th>Difficulty Level</th>
+            <th>Spice Level</th>
+        </tr>
+
+        <tr>
+            <td>Fesenjan</td>
+            <td>Chicken & Walnuts</td>
+            <td>20 mins</td>
+            <td>1 hour</td>
+            <td>Medium</td>
+            <td>Low</td>
+        </tr>
+
+        <tr>
+            <td>Chelo Kebab</td>
+            <td>Lamb/Beef</td>
+            <td>25 mins</td>
+            <td>30 mins</td>
+            <td>Medium</td>
+            <td>Low–Medium</td>
+        </tr>
+
+        <tr>
+            <td>Ghormeh Sabzi</td>
+            <td>Lamb & Herbs</td>
+            <td>20 mins</td>
+            <td>2 hours</td>
+            <td>Hard</td>
+            <td>Medium</td>
+        </tr>
+
+        <tr>
+            <td>Tahdig</td>
+            <td>Rice & Saffron</td>
+            <td>20 mins</td>
+            <td>45 mins</td>
+            <td>Medium</td>
+            <td>None</td>
+        </tr>
+
+        <tr>
+            <td>Ash Reshteh</td>
+            <td>Noodles & Beans</td>
+            <td>30 mins</td>
+            <td>1 hour</td>
+            <td>Medium</td>
+            <td>Low</td>
+        </tr>
+    </table>
+
+</section>
+
+<section id="culinary-adventure">
+
+    <h2>Culinary Adventure</h2>
+
+    <p>
+        From the five Iranian dishes, the one I’d really like to try is Fesenjan. 
+        I picked it because the mix of walnuts and pomegranate molasses sounds unique, 
+        rich, and comforting. While learning about Iranian food, I realized how central 
+        rice and herbs are to their meals, and how dishes often balance sweet and sour 
+        flavors. It also showed me that food in Iran is closely tied to culture and 
+        celebrations like Nowruz. I would recommend Fesenjan to other people because 
+        it’s flavorful, symbolic, and represents the depth of Persian tradition.
+    </p>
+
+
+
+    <footer id="footer">
+
+        <p><strong>Taste of Travel</strong></p>
+        <p>Student Name: <b>Miguel F. Navarro </b></p>
+        <p>Course/Section: <b>BSIT2A</b></p>
+        <p>Assigned Country: <b>Iran</b></p>
+        <p>2026</p>
+
+    </footer>
+
+</body>
+</html>
